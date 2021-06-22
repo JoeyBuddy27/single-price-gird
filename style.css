@@ -1,0 +1,99 @@
+:root {
+  --darkGreen: #2bb3b1;
+  --lightGreen: #4abebd;
+  --yellow: #bfdf32;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px auto;
+  width: 600px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pricing--top {
+  background: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 1.5rem;
+}
+
+.pricing--top h1 {
+  color: var(--darkGreen);
+}
+
+.pricing--top h2 {
+  color: var(--yellow);
+}
+
+.pricing--top p {
+  color: darkgrey;
+  line-height: 1.5em;
+}
+
+.pricing--left,
+.pricing--right {
+  padding: 1.5rem;
+  color: white;
+}
+
+.pricing--left {
+  background: var(--darkGreen);
+}
+
+.pricing--left .smaller {
+  font-size: 1rem;
+  font-weight: 200;
+  color: lightgray;
+}
+
+.pricing--left button {
+  background: var(--yellow);
+  color: white;
+  width: 100%;
+  border-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.19);
+}
+
+.pricing--right {
+  background: var(--lightGreen);
+}
+
+.pricing--right ul li {
+  list-style: none;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.pricing--right ul {
+  padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pricing--left,
+  .pricing--right {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .pricing--container {
+    width: 100vw;
+    border-radius: 0;
+  }
+}

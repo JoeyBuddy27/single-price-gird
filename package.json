@@ -1,0 +1,19 @@
+{
+  "name": "single-price-grid-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w SASS/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyBuddy27/single-price-gird.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeyBuddy27/single-price-gird/issues"
+  },
+  "homepage": "https://github.com/JoeyBuddy27/single-price-gird#readme"
+}
